@@ -88,7 +88,7 @@ var Categorizr = (function () {
                 case TABLET:
                 case TV:
                 case MOBILE:
-                    setDeviceCookie(getQueryString("view"));
+                    setDeviceCookie(getQueryString().view);
                     break;
                 }
             }
