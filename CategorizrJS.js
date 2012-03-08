@@ -1,3 +1,30 @@
+/**
+* CategorizrJS Version 1.0
+* Written originally by Brett Jankord
+* Please note: http://www.brettjankord.com/2012/01/16/categorizr-a-modern-device-detection-script/
+*              https://github.com/bjankord/Categorizr
+* Ported by Kyle Chaplin - Copyright © 2012
+* Port of Categorizr to JavaScript Implementation using cookies.
+*
+* Big thanks to Rob Manson and http://mob-labs.com for their work on
+* the Not-Device Detection strategy:
+* http://smartmobtoolkit.wordpress.com/2009/01/26/not-device-detection-javascript-perl-and-php-code/
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU Lesser General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* GNU Lesser General Public License for more details.
+* You should have received a copy of the GNU General Public License
+* and GNU Lesser General Public License
+* along with this program. If not, see http://www.gnu.org/licenses/.
+**/
+\
+
 // Category name - In the event the script is already using 'category' in the session variables, you could easily change it by only needing to change this value.
 var category = 'comDeviceCategory';
 var DESKTOP = "desktop";
