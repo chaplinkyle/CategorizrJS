@@ -23,7 +23,6 @@
 * and GNU Lesser General Public License
 * along with this program. If not, see http://www.gnu.org/licenses/.
 **/
-\
 
 // Category name - In the event the script is already using 'category' in the session variables, you could easily change it by only needing to change this value.
 var category = 'comDeviceCategory';
@@ -40,8 +39,8 @@ function categorizr(){
     var ua = navigator.userAgent
 
     // Check to see if device type is set in query string
-    if(getQueryString("view").length > 0){
-        switch (getQueryString("view")) {
+    if(typeof getQueryString().view != 'undefined'){
+        switch (getQueryString().view) {
             case DESKTOP: case TABLET: case TV: case MOBILE:
                 setDeviceCookie(getQueryString("view"));
                 break;
