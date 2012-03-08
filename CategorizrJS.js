@@ -3,7 +3,7 @@
  * Written originally by Brett Jankord
  * Please note: http://www.brettjankord.com/2012/01/16/categorizr-a-modern-device-detection-script/
  *              https://github.com/bjankord/Categorizr
- * Ported by Kyle Chaplin - Copyright © 2012
+ * Ported by Kyle Chaplin - Copyright ï¿½ 2012
  * Port of Categorizr to JavaScript Implementation using cookies.
  *
  * Big thanks to Rob Manson and http://mob-labs.com for their work on
@@ -32,6 +32,7 @@ var Categorizr = (function () {
     var MOBILE = "mobile";
     var catergorize_tablets_as_desktops = false; //If TRUE, tablets will be categorized as desktops
     var catergorize_tvs_as_desktops = false; //If TRUE, smartTVs will be categorized as desktops
+    
     function getQueryString() {
         var result = {},
             queryString = location.search.substring(1),
@@ -45,7 +46,6 @@ var Categorizr = (function () {
     }
 
     function setCookie(name, value, seconds) {
-
         if (typeof (seconds) != 'undefined') {
             var date = new Date();
             date.setTime(date.getTime() + (seconds * 1000));
@@ -53,7 +53,6 @@ var Categorizr = (function () {
         } else {
             var expires = "";
         }
-
         document.cookie = name + "=" + value + expires + "; path=/";
     }
 
