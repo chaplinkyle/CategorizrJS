@@ -42,20 +42,8 @@ function categorizr(){
     // Check to see if device type is set in query string
     if(getQueryString("view").length > 0){
         switch (getQueryString("view")) {
-            case DESKTOP:
+            case DESKTOP: case TABLET: case TV: case MOBILE:
                 setDeviceCookie(getQueryString("view"));
-                break;
-            case TABLET:
-                setDeviceCookie(getQueryString("view"));
-                break;
-            case TV:
-                setDeviceCookie(getQueryString("view"));
-                break;
-            case MOBILE:
-                setDeviceCookie(getQueryString("view"));
-                break;
-            default: 
-                // Do nothing.
                 break;
         }
     }
