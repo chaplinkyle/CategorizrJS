@@ -3,18 +3,16 @@
 <meta charset="utf-8" />
 <title>CategorizrJS Example</title>
 <script src="CategorizrJS.js"></script>
-<script type="text/javascript">
-	function clickHandler(){
-		document.body.innerHTML = 
-			"Mobile: " + Categorizr.isMobile() + 
-			"<br/> Desktop: " +  Categorizr.isDesktop() + 
-			"<br/> Tablet: " +  Categorizr.isTablet() +
-			"<br/> TV: " +  Categorizr.isTV();
-	}
-</script>
 </head>
 <body>
-	<input type="button" onClick="clickHandler()" value="Click Here"/>
 </body>
+<script type="text/javascript">
+	(function() {
+		document.body.innerHTML =
+			"Mobile: " + Categorizr.isMobile() +
+			"<br/> Desktop: " + Categorizr.isDesktop() +
+			"<br/> Tablet: " + Categorizr.isTablet() +
+			"<br/> TV: " + Categorizr.isTV();
+	})();
+</script>
 </html>
-
